@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(244, 244, 244);
+    background-image: url(../images/fondo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 120px;
+}
+
+nav{  /* barra superior */
+    background: #f59f35; 
+    position: fixed;
+    width: 100%;
+    height: 120px;
+}
+.enlace{ /*cuadro logo*/
+    position: absolute;
+    padding: 10px 20px;
+}
+.logo{
+    width: 115px;
+    height: 115px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    padding: 20px 5px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    font-family: pacifico;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration:none ;
+}
+nav ul li ul{
+    margin-right: 50px;
+    position: absolute;
+    width: 260px;
+    margin-top: -35px;
+    height: 0%;
+    overflow: hidden;
+}
+nav ul li ul li{
+    float: right;
+    width: 100%;
+    height: 44px; 
+    font-family:arial;
+    margin-right: 50px;
+}
+nav ul li ul li a{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+    background-color: #f59f35;
+}
+nav ul li ul a:hover{
+    color:white;
+}
+nav ul li:hover ul{
+    height: 110%;
+    transition-duration: 0.4s;
+}
+
+li a:hover{
+    color: black;
+    transition: 0.3s;
+}
+.profileimg
+{
+    margin-top: -15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #000000;
+}
+
+.barraimg
+{
+    width: 100px;
+    height:80px;
+}
+.imgconfig{
+    width: 40px;
+    height: 40px;
+}
+.imgBuscador{
+    height: 30px;
+    width: 30px;
+}
+#info{
+    margin-top: 300px;
+    height: 700px;
+    width: 100%;
+}
+#modal::backdrop{
+    background-color: rgba(0,0,0,.55);
+    
+}
+#modal{
+    padding: 50px 5px;
+    margin: 10% 19%;
+    width: 60%;
+    position: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-color: #f59f35;
+    font-family:Impact;
+}
+#modal button {
+    margin: 0px 4%;
+    background: url("../images/boton.png") center;
+    background-size: 100% 100%;
+    color: black;
+    font-size: 2vh;
+    border-width: 0px;
+    padding: 5px 30px;
+}
+
+.volumen{
+    width: 270px;
+}
+
+.Cmodal{
+    margin: 60px, 60px;
+    padding: 20px 10px;
+}
+.Cmodal2{
+    margin: 60px, 60px;
+    padding: 20px 1px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.Cpermisos1{
+    margin: 0px 6%;
+    text-align: left;
+}
+/*---Barra menu---- hasta aqui*/
+
+.BannerRopa
+{
+    font-family:'Times New Roman';
+    position: static;
+    font-size: 50px;
+    background-color: #FBBCB6;
+    padding:10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    position:static;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: auto;
+    padding: 0px;
+}
+
+.slider {
+
+    min-width: 400px;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.slider ul {
+    display: flex;
+    padding: 0px;
+    width: 400%;
+    height: auto;
+    animation: cambio 20s infinite alternate ease-in;
+        list-style: none;
+}
+.slider img {
+    width: 100%;
+}
+.slider img {
+    opacity: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-Left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%}
+    75% {margin-left: -300%;}
+    100% {margin-Left: -300%;}
+}
+/*filtros*/
+.filtros{
+    margin-top: 20px;
+    padding: 10px 0px;
+    background-color: #f59f35;
+    border-radius: 15px;
+    display:flex;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+}
+.filtros div{
+
+    padding: 0px 2.5%;
+    font-size: 20px;
+    font-family:Verdana;
+}
+.buscar{
+    margin: 0px 4%;
+    background: url("../images/boton.png") center;
+    background-size: 100% 100%;
+    color: black;
+    font-size: 2vh;
+    border-width: 0px;
+    padding: 5px 30px;
+}
+
+/*------carrusel--------*/
+
+h2{
+    margin: 20px 0px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.carrusel-items{
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.carrusel-item{
+    width: 100%;
+    height: 250px;
+}
+.carrusel-item img{
+    width: auto;
+    height: 100%;
+    padding: 0px 50px;
+}
+
+/*----catalogo----*/
+
+.catalogo{
+
+ display:flex;
+ justify-content: center;
+}
+.presentacion{
+    position: static;
+    background-color: #f59f35;
+    margin: 50px 30px;
+    width: 20%;
+    min-width: 300px;
+    height: 500px;
+}
+.presentacion:hover{
+    background-color: #da8c2e;
+    transition-duration:  0.5s;
+}
+.Pimagen{
+    position: relative;
+    width: 100%;
+    height: 520px;
+    height: 60%;
+    background: url('../images/ropaV1.jpg') center / cover;
+}
+.Pimagen1{
+    position: relative;
+    width: 100%;
+    height: 520px;
+    height: 60%;
+    background: url('../images/ropaV2.jpg') center / cover;
+}
+.Pimagen2{
+    position: relative;
+    width: 100%;
+    height: 520px;
+    height: 60%;
+    background: url('../images/ropaV3.jpg') center / cover;
+}
+.Pimagen3{
+    position: relative;
+    width: 100%;
+    height: 520px;
+    height: 60%;
+    background: url('../images/ropaV4.jpg') center / cover;
+}
+.descripcion{
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+.caracteristicas{
+    padding:5px 20px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+.precio{
+    padding:5px 20px;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium';
+    color: #429642;
+}
+.Pbutton{
+    position:relative;
+    display: flex;
+    justify-content:end;
+}
+
+
+.version h2{
+    font-size: 25px;
+    background-color: #f59f35;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

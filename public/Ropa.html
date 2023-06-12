@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloting Fashion</title>
+
+    <link rel="stylesheet" href="assets/font/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="assets/styles/style_Ropa.css">
+</head>
+<body>
+    <nav>   
+        <a href="index.html" class="enlace">
+            <img src="assets/images/log1.png" class="logo" alt="">
+        </a>
+        <ul>
+            <li><a href="mi_armario.html">Mi Armario</a></li>
+            <li><a href="#">Avatar 3D</a></li>
+            <li><a href="#">Ropa Cerca de ti</a></li>
+            <li><a href="#">Foro Outfits</a></li>
+            <li class="perfil"><a href="perfil.html"><img src="assets/images/img.perfil.jpg" alt="" class="profileimg"></a></li>
+            <li class="barra"><a href="#"><img src="assets/images/barra.svg" alt="" class="barraimg"></a>
+                <ul id="despliege">
+                    <li><a id="abrir">Configuración<img src="assets/images/config.png" alt="" class="imgconfig" id="abrir"></a></li>
+                    <li><a href="">Premium<img src="assets/images/dolar.png" alt="" class="imgconfig"></a></li>
+                    <li><a href="">Ayuda<img src="assets/images/ayuda.png" alt="" class="imgconfig"></a></li>
+                </ul>
+            </li>
+        </ul>  
+    </nav>
+ 
+    <dialog id="modal">
+        <form method="dialog" class="form">
+            <div class="Cmodal">
+                <label for="vol">Volumen: </label>
+                <input class="volumen" id="vol" type="range" min="0" max="100" step="1" value="50" onchange="document.getElementById('outvol').value=value+' %'">
+                <output id="outvol" for="vol">50 %</output>
+            </div>
+            <div class="Cmodal">
+                <label for="desplagable">Idioma: </label>
+                <select id="desplagable">
+                <option>español</option>
+                <option>ingles</option>
+                <option>frances</option>
+            </select>
+            <div class="Cmodal2">
+                <div class="Cpermisos">
+                    <label for="permisos">Permisos:</label>
+                </div>
+                
+                
+                <div class="Cpermisos1">
+                    <label for="permisos">Camara</label>
+                    <br>
+                    <label for="permisos">Notificaciones</label>
+                    <br>
+                    <label for="permisos">Ubicacion</label>
+                    
+                </div>
+                
+                <div class="Cpermisos2">
+                    <input id="permisos" type="radio" name="camara" checked>
+                    <label for="permisos" name="SoN">si</label>
+                    <input id="permisos" type="radio" name="camara">
+                    <label for="permisos" name="SoN">no</label>
+                    <br>
+                    <input id="permisos" type="radio" name="notificaciones" checked>
+                    <label for="permisos" name="SoN">si</label>
+                    <input id="permisos" type="radio" name="notificaciones">
+                    <label for="permisos" name="SoN">no</label>
+                    <br>
+                    <input id="permisos" type="radio" name="ubicacion" checked>
+                    <label for="permisos" name="SoN">si</label>
+                    <input id="permisos" type="radio" name="ubicacion">
+                    <label for="permisos" name="SoN">no</label>
+                </div>
+                               
+            </select>
+            </div>
+            
+            
+            <br>
+            <button type="submit" id="Cerrar">Cerrar</button>
+            <button type="submit" id="Guardar">Guardar</button>
+        </form>
+    </dialog>
+
+    <div class="espacio">
+         <br><br><br><br><br><br>
+         <br><br>
+    </div>
+    <h1 class="BannerRopa">ROPA CERCA DE TI</h1>
+    <div class="contenedor">
+        <div class="Cslider">
+            <div class="slider">
+                <ul>
+                    <li><img src="assets/images/venta1.jpg" alt=""></li>
+                    <li><img src="assets/images/venta2.png" alt=""></li>
+                    <li><img src="assets/images/venta3.jpg" alt=""></li>
+                    <li><img src="assets/images/venta4.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="filtros">
+            <div>
+                <label for="Tprenda">Tipo de Prenda:</label>
+                <select id="Tprenda">
+                    <option>---</option>
+                    <option>Poleras</option>
+                    <option>Camisas</option>
+                    <option>Blusas</option>
+                    <option>Busos</option>
+                    <option>Medias</option>
+                    <option>Zapatillas</option>
+                    <option>Botas</option>
+                </select>
+            </div>
+            <div>
+                <label for="talla">Talla:</label>
+                <select id="talla">
+                    <option>---</option>
+                    <option>16</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
+            </div>
+            <div>
+                <label for="color primario">Color primario:</label>
+                <input type="color" id="color primario">
+            </div>
+            <div>
+                <label for="color secundario">Color secundario:</label>
+                <input type="color" id="color secundario">
+            </div>
+            <div>
+                <label for="precio">Precio:</label>
+                <select id="precio">
+                    <option>---</option>
+                    <option>Menor a S/100.00</option>
+                    <option>S/100.00 a S/200.00</option>
+                    <option>S/200.00 a S/300.00</option>
+                    <option>S/300.00 a S/400.00</option>
+                    <option>Más de S/400.00</option>
+                </select>
+            </div>
+            <div>
+                <label for="estilo">Estilo:</label>
+                <select id="estilo">
+                    <option>---</option>
+                    <option>Casual</option>
+                    <option>Deportivo</option>
+                    <option>Elegante</option>
+                    <option>Romantico</option>
+                    <option>Seductor</option>
+                </select>
+            </div>
+            <div>
+                <label for="material">Tipo de material:</label>
+                <select id="material">
+                    <option>---</option>
+                    <option>Lino</option>
+                    <option>Algodon</option>
+                    <option>Seda</option>
+                    <option>Nylon</option>
+                    <option>Lycra</option>
+                </select>
+            </div >
+            <div class="button">
+                <button class="buscar">Buscar</button>
+            </div>
+        </div>
+        <div class="marca">
+            <h2>Marcas disponibles</h2>
+            <div class="carrusel">
+                <div class="carrusel-items">
+                    <div class="carrusel-item">
+                        <img src="assets/images/logoADIDAS.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="assets/images/logoGAMARRA.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="assets/images/logoHYM.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="assets/images/logoKMK.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="assets/images/logoRIPLEY.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="assets/images/logoSAGA.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="assets/images/logoTOPITOP.png" alt="">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="assets/images/logoZARA.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalogo">
+            <div class="presentacion">
+                <div class="Pimagen"></div>
+                <div class="descripcion"> Vestido Rojo</div>
+                <div class="caracteristicas">Talla: S    Color: Rojo</div>
+                <div class="precio">S./500.00</div>
+                <div class="Pbutton"><button class="buscar">Comprar</button>  
+                </div>
+            </div>
+            <div class="presentacion">
+                <div class="Pimagen1"></div>
+                <div class="descripcion"> Vestido Rojo</div>
+                <div class="caracteristicas">Talla: S    Color: Rojo</div>
+                <div class="precio">S./500.00</div>
+                <div class="Pbutton"><button class="buscar">Comprar</button>  
+                </div>
+            </div>
+            <div class="presentacion">
+                <div class="Pimagen2"></div>
+                <div class="descripcion"> Vestido Rojo</div>
+                <div class="caracteristicas">Talla: S    Color: Rojo</div>
+                <div class="precio">S./500.00</div>
+                <div class="Pbutton"><button class="buscar">Comprar</button>  
+                </div>
+            </div>
+            <div class="presentacion">
+                <div class="Pimagen3"></div>
+                <div class="descripcion"> Vestido Rojo</div>
+                <div class="caracteristicas">Talla: S    Color: Rojo</div>
+                <div class="precio">S./500.00</div>
+                <div class="Pbutton"><button class="buscar">Comprar</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="version">
+        <h2>
+            © Version Actual: 1.0
+        </h2>
+    </footer>
+    <script src="assets/scripts/script_carrusel.js"></script>
+    <script src="assets/scripts/scriptModal.js"></script>
+</body>
+</html>

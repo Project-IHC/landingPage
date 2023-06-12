@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloting Fashion</title>
+    <link rel="stylesheet" href="assets/styles/style_principal.css">
+    <link rel="stylesheet" href="assets/font/font.css">
+</head>
+<body>
+    <nav>   
+        <a href="index.html" class="enlace">
+            <img src="assets/images/log1.png" class="logo" alt="">
+        </a>
+        <ul>
+            <li><a href="mi_armario.html">Mi Armario</a></li>
+            <li><a href="#">Avatar 3D</a></li>
+            <li><a href="Ropa.html">Ropa Cerca de ti</a></li>
+            <li><a href="#">Foro Outfits</a></li>
+            <li class="perfil"><a href="perfil.html"><img src="assets/images/img.perfil.jpg" alt="" class="profileimg"></a></li>
+            <li class="barra"><a href="#"><img src="assets/images/barra.svg" alt="" class="barraimg"></a>
+                <ul id="despliege">
+                    <li><a id="abrir">Configuración<img src="assets/images/config.png" alt="" class="imgconfig" id="abrir"></a></li>
+                    <li><a href="">Premium<img src="assets/images/dolar.png" alt="" class="imgconfig"></a></li>
+                    <li><a href="">Ayuda<img src="assets/images/ayuda.png" alt="" class="imgconfig"></a></li>
+                </ul>
+            </li>
+        </ul>  
+    </nav>
+ 
+    <dialog id="modal">
+        <form method="dialog" class="form">
+            <div class="Cmodal">
+                <label for="vol">Volumen: </label>
+                <input class="volumen" id="vol" type="range" min="0" max="100" step="1" value="50" onchange="document.getElementById('outvol').value=value+' %'">
+                <output id="outvol" for="vol">50 %</output>
+            </div>
+            <div class="Cmodal">
+                <label for="desplagable">Idioma: </label>
+                <select id="desplagable">
+                <option>español</option>
+                <option>ingles</option>
+                <option>frances</option>
+            </select>
+            <div class="Cmodal2">
+                <div class="Cpermisos">
+                    <label for="permisos">Permisos:</label>
+                </div>
+                
+                
+                <div class="Cpermisos1">
+                    <label for="permisos">Camara</label>
+                    <br>
+                    <label for="permisos">Notificaciones</label>
+                    <br>
+                    <label for="permisos">Ubicacion</label>
+                    
+                </div>
+                
+                <div class="Cpermisos2">
+                    <input id="permisos" type="radio" name="camara" checked>
+                    <label for="permisos" name="SoN">si</label>
+                    <input id="permisos" type="radio" name="camara">
+                    <label for="permisos" name="SoN">no</label>
+                    <br>
+                    <input id="permisos" type="radio" name="notificaciones" checked>
+                    <label for="permisos" name="SoN">si</label>
+                    <input id="permisos" type="radio" name="notificaciones">
+                    <label for="permisos" name="SoN">no</label>
+                    <br>
+                    <input id="permisos" type="radio" name="ubicacion" checked>
+                    <label for="permisos" name="SoN">si</label>
+                    <input id="permisos" type="radio" name="ubicacion">
+                    <label for="permisos" name="SoN">no</label>
+                </div>
+                               
+            </select>
+            </div>
+            
+            
+            <br>
+            <button type="submit" id="Cerrar">Cerrar</button>
+            <button type="submit" id="Guardar">Guardar</button>
+        </form>
+    </dialog>
+
+    <div class="espacio">
+         <br><br><br><br><br><br>
+         <br><br>
+    </div>
+    
+    <div class="contenedor">
+        <div class="pregunta">
+            ¿Busca algo en especifico?
+        </div>
+        <div class="buscador">
+            <input type="text" placeholder="Search.."> 
+            <img src="assets/images/buscador.png" alt="" class="imgBuscador">  
+        </div>
+
+        <div id="info">
+            <div class="contSomos">
+                <img src="assets/images/QuienesSomos.png" alt="" class="imgSomos">
+            </div>
+            <div class="contMovil">
+                <img src="assets/images/movil.png" alt="" class="movil">
+            </div>
+            
+        </div>
+    </div>
+    <div class="cat">
+        <div class="ear ear--left"></div>
+        <div class="ear ear--right"></div>
+        <div class="face">
+            <div class="eye eye--left">
+                <div class="eye-pupil"></div>
+            </div>
+            <div class="eye eye--right">
+                <div class="eye-pupil"></div>
+            </div>
+            <div class="muzzle"></div>
+        </div>
+    </div>
+    <footer class="version">
+        <h2>
+            © Version Actual: 1.0
+        </h2>
+    </footer>
+    <script src="assets/scripts/scriptModal.js"></script>
+</body>
+</html>

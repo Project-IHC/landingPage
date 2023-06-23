@@ -92,6 +92,7 @@
          <br><br><br><br><br><br>
          <br><br>
     </div>
+
     <h1 class="BannerRopa">ROPA CERCA DE TI</h1>
     <div class="contenedor">
         <div class="Cslider">
@@ -104,6 +105,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="filtros">
             <div>
                 <label for="Tprenda">Tipo de Prenda:</label>
@@ -211,42 +213,100 @@
                 <div class="descripcion"> Vestido Rojo</div>
                 <div class="caracteristicas">Talla: S    Color: Rojo</div>
                 <div class="precio">S./500.00</div>
-                <div class="Pbutton"><button class="buscar">Comprar</button>  
-                </div>
+                <button class="Pbutton" onclick="openComprar()">Comprar</button>
+                <dialog id="comprar" class="comprar">
+                    <h2>Detalles de compra</h2>
+                    <img class="imagenDetalle" src="assets/images/ropaV1.jpg" alt="">
+                    <div class="detallesProducto">
+                        <div class="descripcion"> Vestido Rojo</div>
+                        <div class="caracteristicas">Talla: S <br> Color: Rojo <br> Tienda: Zara <br> Estilo: Elegante <br> Material: Seda</div>
+                        <div class="precio">S./500.00</div>
+                    </div>
+                    <div class="botones">
+                        <a class="Cbutton" href="#">Comprar</a>
+                        <button class="Cbutton" onclick="closeComprar()">Cancelar</button>
+                    </div>
+                </dialog>
             </div>
             <div class="presentacion">
                 <div class="Pimagen1"></div>
-                <div class="descripcion"> Vestido Rojo</div>
-                <div class="caracteristicas">Talla: S    Color: Rojo</div>
-                <div class="precio">S./500.00</div>
-                <div class="Pbutton"><button class="buscar">Comprar</button>  
-                </div>
+                <div class="descripcion"> Blusa rayada</div>
+                <div class="caracteristicas">Talla: S    Color: Azul</div>
+                <div class="precio">S./100.00</div>
+                <button class="Pbutton" onclick="openComprar1()">Comprar</button>
+                <dialog id="comprar1" class="comprar">
+                    <h2>Detalles de compra</h2>
+                    <img class="imagenDetalle" src="assets/images/ropaV2.jpg" alt="">
+                    <div class="detallesProducto">
+                        <div class="descripcion"> Blusa rayada</div>
+                        <div class="caracteristicas">Talla: S <br> Color: Azul <br> Tienda: HyM <br> Estilo: Casual <br> Material: Algodon</div>
+                        <div class="precio">S./100.00</div>
+                    </div>
+                    <div class="botones">
+                        <a class="Cbutton" href="#">Comprar</a>
+                        <button class="Cbutton" onclick="closeComprar1()">Cancelar</button>
+                    </div>
+                </dialog>
             </div>
             <div class="presentacion">
                 <div class="Pimagen2"></div>
-                <div class="descripcion"> Vestido Rojo</div>
-                <div class="caracteristicas">Talla: S    Color: Rojo</div>
-                <div class="precio">S./500.00</div>
-                <div class="Pbutton"><button class="buscar">Comprar</button>  
-                </div>
+                <div class="descripcion"> Zapatillas</div>
+                <div class="caracteristicas">Talla: 40    Color: Negro</div>
+                <div class="precio">S./250.00</div>
+                <button class="Pbutton" onclick="openComprar2()">Comprar</button>
+                <dialog id="comprar2" class="comprar">
+                    <h2>Detalles de compra</h2>
+                    <img class="imagenDetalle" src="assets/images/ropaV3.jpg" alt="">
+                    <div class="detallesProducto">
+                        <div class="descripcion">Zapatillas</div>
+                        <div class="caracteristicas">Talla: 40 <br> Color: Negro <br> Tienda: Nike <br> Estilo: Deportivo <br> Material: Cuero</div>
+                        <div class="precio">S./250.00</div>
+                    </div>
+                    <div class="botones">
+                        <a class="Cbutton" href="#">Comprar</a>
+                        <button class="Cbutton" onclick="closeComprar2()">Cancelar</button>
+                    </div>
+                </dialog>
             </div>
             <div class="presentacion">
                 <div class="Pimagen3"></div>
-                <div class="descripcion"> Vestido Rojo</div>
-                <div class="caracteristicas">Talla: S    Color: Rojo</div>
-                <div class="precio">S./500.00</div>
-                <div class="Pbutton"><button class="buscar">Comprar</button>  
-                </div>
+                <div class="descripcion"> Buzo</div>
+                <div class="caracteristicas">Talla: S    Color: Verde</div>
+                <div class="precio">S./150.00</div>
+                <button class="Pbutton" onclick="openComprar3()">Comprar</button>
+                <dialog id="comprar3" class="comprar">
+                    <h2>Detalles de compra</h2>
+                    <img class="imagenDetalle" src="assets/images/ropaV4.jpg" alt="">
+                    <div class="detallesProducto">
+                        <div class="descripcion"> Buzo</div>
+                        <div class="caracteristicas">Talla: S <br> Color: Verde <br> Tienda: Adidas <br> Estilo: Deportivo <br> Material: Nylon</div>
+                        <div class="precio">S./150.00</div>
+                    </div>
+                    <div class="botones">
+                        <a class="Cbutton" href="#">Comprar</a>
+                        <button class="Cbutton" onclick="closeComprar3()">Cancelar</button>
+                    </div>
+                </dialog>
             </div>
         </div>
     </div>
-    
+
+    <input class="inputmap"
+    type="text"
+    id="place_input"
+    placeholder="Ingresa una ubicación..."
+    />
+    <div id="map"></div>
+
     <footer class="version">
         <h2>
             © Version Actual: 1.0
         </h2>
     </footer>
+    <script src="assets/scripts/script_comprar.js"></script>
+    <script src="assets/scripts/script_map.js"></script>
     <script src="assets/scripts/script_carrusel.js"></script>
     <script src="assets/scripts/scriptModal.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQysw0BxkpbICTiFjVNd4c814uVoS8pgE&libraries=places&callback=initMap"></script> </script>
 </body>
 </html>

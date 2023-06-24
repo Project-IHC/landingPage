@@ -166,7 +166,8 @@ li a:hover{
     justify-content: center;
 }
 .contenedor{
-    background-color: #F2C6C2;
+    display: auto;
+    position: static;
     padding: 100px 2%;
     font-family: 'Courier Prime', monospace;
 }
@@ -174,7 +175,7 @@ li a:hover{
     display:flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: static;
     padding: 5px;
 }
 .buscar input{
@@ -190,24 +191,26 @@ li a:hover{
 }
 .outfits-fila1{
     display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax(360px, auto));
+    grid-template-columns: repeat(auto-fit ,minmax(280px, auto));
     align-items: center;
     gap: 2rem;
     text-align: center;
     padding-top: 2rem;
 }
+.box{ 
+    padding: 0px 0px;
+    border-radius: 10px;
+    position: static;
+    transition: all .35s ease;
+    background-color: #F2C6C2;
+    border: 0.5px solid rgb(255, 171, 171);
+}
 .outfit{
+    padding-top: 7px;
     width: 200px;
     height: 300px;
 }
-.outfits-fila2{
-    display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax(360px, auto));
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-    padding-top: 2rem;
-}
+
 .Botonn{
     margin: 6px;
     display: flex;
@@ -219,33 +222,29 @@ li a:hover{
     justify-content: center; 
 }
 .stars{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
+    background-color: rgb(255, 239, 194);
+    border-radius: 20px;
+    padding: 0px 0px;
 }
+
+
+.comentar{
+    margin: 6px;
+    display: block;
+    border: 0.5px solid black;
+    border-radius: 40px;
+    background-color: #f59f35;
+    justify-content: center; 
+    color:black;
+    font-size: 19px;
+    text-decoration: none;
+}
+
 .version h2{
     background-color: #f59f35;
     width: 100%;
     display: flex;
     justify-content: center;
-}
-.box{ 
-    padding: 0px 20px 10px 20px;
-    background: transparent;
-    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
-    border-radius: 10px;
-    position: relative;
-    transition: all .35s ease;
-}
-.comentar{
-    margin: 6px;
-    display: block;
-    border: 40px solid;
-    border-radius: 40px;
-    border-width: 0;
-    background-color: #f59f35;
-    justify-content: center; 
-    color:black;
-    font-size: 19px;
-    font-weight: 700;
-    text-decoration: none;
 }

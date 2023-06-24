@@ -172,6 +172,7 @@ li a:hover{
     padding-top: 20px;
     width: 95%;
     height: auto;
+    min-height: 680px;
     margin: auto;
     display: auto;
     justify-content: center;

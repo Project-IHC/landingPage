@@ -5,8 +5,11 @@ Unos puntos del proyecto es una pagina web de creaciones y opiniones sobre outfi
 
 
 Autores:
-- López Huarcaya, Leonardo Paul
-
+Leonardo Lopez
+Pariño Aldair 
+Alexander Justo 
+Matias Granda
+Fabrizzio Cuchca
 
 Segmentos Objetivos:
 

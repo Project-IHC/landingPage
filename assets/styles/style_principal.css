@@ -366,15 +366,15 @@ li a:hover{
 
 #info{
     margin: 40px 0;
+    width: 100%;
 }
 
 .contMovil{
     margin-top: 280px;
     float: left;
-    height: 60%;
+    height: auto;
     width: 32%;
-    min-width: 650px;
-    min-height: 10px;
+    min-width: 350px;
 }
 .movil{
     height: 100%;
@@ -383,9 +383,9 @@ li a:hover{
 
 .contSomos{
     float: right;
-    height: 100%;
-    width: 25%;
-    min-width: 450px;
+    height: auto;
+    width: 35%;
+    min-width: 250px;
 }
 .imgSomos{
     width: 100%;

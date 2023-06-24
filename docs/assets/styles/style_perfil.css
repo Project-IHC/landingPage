@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(244, 244, 244);
+    background-image: url(../images/fondo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 120px;
+}
+
+nav{  /* barra superior */
+    background: #f59f35; 
+    position: fixed;
+    width: 100%;
+    height: 120px;
+}
+.enlace{ /*cuadro logo*/
+    position: absolute;
+    padding: 10px 20px;
+}
+.logo{
+    width: 115px;
+    height: 115px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    padding: 20px 5px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    font-family: pacifico;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration:none ;
+}
+nav ul li ul{
+    margin-right: 50px;
+    position: absolute;
+    width: 260px;
+    margin-top: -35px;
+    height: 0%;
+    overflow: hidden;
+}
+nav ul li ul li{
+    float: right;
+    width: 100%;
+    height: 44px; 
+    font-family:arial;
+    margin-right: 50px;
+}
+nav ul li ul li a{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+    background-color: #f59f35;
+}
+nav ul li ul a:hover{
+    color:white;
+}
+nav ul li:hover ul{
+    height: 110%;
+    transition-duration: 0.4s;
+}
+
+li a:hover{
+    color: black;
+    transition: 0.3s;
+}
+.profileimg
+{
+    margin-top: -15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #000000;
+}
+
+.barraimg
+{
+    width: 100px;
+    height:80px;
+}
+.imgconfig{
+    width: 40px;
+    height: 40px;
+}
+.imgBuscador{
+    height: 30px;
+    width: 30px;
+}
+#info{
+    margin-top: 300px;
+    height: 700px;
+    width: 100%;
+}
+#modal::backdrop{
+    background-color: rgba(0,0,0,.55);
+    
+}
+#modal{
+    padding: 50px 5px;
+    margin: 10% 19%;
+    width: 60%;
+    position: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-color: #f59f35;
+    font-family:Impact;
+}
+#modal button {
+    margin: 0px 4%;
+    background: url("../images/boton.png") center;
+    background-size: 100% 100%;
+    color: black;
+    font-size: 2vh;
+    border-width: 0px;
+    padding: 5px 30px;
+}
+
+.volumen{
+    width: 270px;
+}
+
+.Cmodal{
+    margin: 60px, 60px;
+    padding: 20px 10px;
+}
+.Cmodal2{
+    margin: 60px, 60px;
+    padding: 20px 1px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.Cpermisos1{
+    margin: 0px 6%;
+    text-align: left;
+}
+/*---Barra menu---- hasta aqui*/
+
+.BannerPerfil
+{
+    font-family:'Times New Roman';
+    position: static;
+    font-size: 50px;
+    background-color: #FBBCB6;
+    padding-top:10px;
+    display: flex;
+    justify-content: center;
+}
+.contPerfil{
+    display: flex;
+    justify-content: center;
+}
+.profileimg2
+{ 
+    margin-top: 25px ;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 9px solid #fff;
+}
+.subir input{
+    display: none;
+}
+.subir{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.Information1{
+    padding-top: 50px;
+}
+.contEditar{
+    
+    display: flex;
+    justify-content: center;
+}
+.BotonPerfil
+{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+.BotonPerfil:hover
+{
+color:#FF3364;
+cursor:pointer;
+transition-duration: 0.2s;
+}
+.Information1
+{
+    font-family: 'Montserrat', 'sans-serif';
+    height: 100%;
+    width:100%;
+    line-height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.ContainerA
+{
+    font-size: 22px;
+    flex-direction: column;
+    display:flex;
+    float:left;
+    margin: 0px 100px;
+}
+.ContainerA h2{
+    margin: 6px;
+    display: flex;
+    border-radius: 40px;
+    background-color: #f59f35;
+    width: 100%;
+    justify-content: center; 
+}
+.ContainerB
+{
+    font-size: 28px;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    float: right;
+    margin-left: 0px 100px;
+}
+.ContainerB input{
+    margin: 6px;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 40px;
+    background-color: #f59f35;
+    width: 100%;
+    height: 65px;
+    border-width: 0;
+}
+.ContainerB p{
+    margin: 6px;
+    display: flex;
+    border-radius: 40px;
+    background-color: #f59f35;
+    width: 100%;
+    justify-content: center; 
+}
+
+#save
+{
+    display:block;
+    width: 180px;
+    height: 80px;
+    transform:translateX(1500px);
+    background-color: #FBBCB6;
+    border:none;
+    border-radius: 15px;
+    transition: ease-out 0.3s;
+    margin: 30px 0px;
+}
+.guardar{
+    font-size: 25px;
+    font-family: 'Montserrat', 'sans-serif';
+    color:#fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+#save:hover
+{
+color:#FBBCB6;
+cursor:pointer;
+box-shadow: inset 300px 0 0 0 #FF3364;
+}
+
+.version h2{
+    background-color: #f59f35;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

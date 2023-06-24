@@ -374,3 +374,101 @@ div.pie label:hover{
     display: flex;
     justify-content: center;
 }
+
+div.galeria1{
+    position:absolute;
+    padding: 10px 10px;
+    margin: 5px 450px;
+    box-shadow: 0 4px 8px 0 #f59f35, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: center;
+    width: 500px;
+    
+}
+div.galeria1 img{
+    width: 125%;
+    height: auto;
+    text-align: center;
+}
+.info{
+position: absolute;
+background-color:white;
+font-size: 25px;
+left: 1085px;
+top: 400px;
+z-index: 1;
+
+
+}
+div.galeria2{
+    position:absolute;
+    padding: 10px 10px;
+    margin: 5px 450px;
+    box-shadow: 0 4px 8px 0 #f59f35, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: center;
+    width: 500px;
+    
+}
+div.galeria2 img{
+    width: 125%;
+    height: 550px;
+    text-align: center;
+}
+div.galeria3{
+    position:absolute;
+    padding: 10px 10px;
+    margin: 5px 450px;
+    box-shadow: 0 4px 8px 0 #f59f35, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: center;
+    width: 500px;
+    
+}
+div.galeria3 img{
+    width: 125%;
+    height: 550px;
+    text-align: center;
+}
+div.galeria4{
+    position:absolute;
+    padding: 10px 10px;
+    margin: 5px 450px;
+    box-shadow: 0 4px 8px 0 #f59f35, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: center;
+    width: 500px;
+    
+}
+div.galeria4 img{
+    width: 125%;
+    height: 550px;
+    text-align: center;
+}
+.contratos{
+font-size: 55px;
+text-align: center;
+
+
+}
+.contrato1{
+font-size: 50px;
+text-align: center;
+
+
+}
+.cambiar1{
+    font-size: 50px;
+    text-align: center;
+    
+    
+    }
+    .ayuda{
+        font-size: 30px;
+        text-align: center;
+       
+        
+        
+        }
+.cancelar1{
+
+    font-size: 35px;
+    text-align: center;
+
+}

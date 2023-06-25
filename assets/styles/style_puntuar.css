@@ -344,6 +344,23 @@ li a:hover{
     padding: 100px 2%;
     font-family: 'Courier Prime', monospace;
 }
+.Cpublicar{
+    display: flex;
+    justify-content: end;
+}
+.Bpublicar{
+    margin: 0px 4%;
+    background: url("../images/boton.png") center;
+    background-size: 100% 100%;
+    color: black;
+    font-size: 3vh;
+    border-width: 0px;
+    padding: 10px 60px;
+}
+.Bpublicar:hover{
+    cursor:pointer;
+    color: white;
+}
 .buscar{
     display:flex;
     align-items: center;

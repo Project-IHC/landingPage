@@ -372,6 +372,30 @@ margin: 250px 50px;
     box-sizing: border-box;
     transition: .3s;
 }
+
+.photo{
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    font-size: 21px;
+}
+#prevista{
+    width: 300px;
+    height: 300px;
+    padding: 0;
+}
+.Foto{
+z-index:10;
+border-radius: 15px;
+object-fit: cover;
+border: 5px solid #fff;
+display: block;
+}
+#prevista{
+    width: 400px;
+    height: 400px;
+}
 .cb:focus{
     border-color: dodgerblue;
     box-shadow: 0 0 8px 0 dodgerblue;
@@ -416,27 +440,4 @@ margin: 250px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.photo{
-    align-items: center;
-    text-align: center;
-    width: 300px;
-    height: 70px;
-    font-size: 21px;
-}
-#prevista{
-    width: 300px;
-    height: 300px;
-    padding: 0;
-}
-.Foto{
-z-index:10;
-border-radius: 50%;
-object-fit: cover;
-border: 5px solid #fff;
-display: block;
-}
-#prevista{
-    width: 400px;
-    height: 400px;
 }

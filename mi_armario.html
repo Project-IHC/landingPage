@@ -87,7 +87,7 @@
        <br><br><br><br>
     </div>
     <h1 class="BannerArmario">MI ARMARIO</h1>
-    <div class="contenedor">
+    <div class="contenedor" id="contenedor">
         <div class="galeria">
             <div class="foto">
                 <a href="polo1.html"> <img src="assets/images/polo1.png" alt=""></a>
@@ -152,25 +152,31 @@
                 <p>Polo a rallas verde</p>
             </div>
         </div>
-        <div class="galeria">
-            <div class="foto">
-              </a>  <img src="assets/images/anhadir.png" alt="avatar" id="img"/>
-            </div>
-            <div class="pie">
-                <input type="file" name="foto" id="foto" accept="imagenes/*"/>
-                <label for="foto" id="agregar">AGREGAR PRENDA</label>
-            </div>
-        </div>
+        
     </div>
-
+    <div class="galeria">
+        <form id="formulario">
+            <div class="foto">
+                <img src="assets/images/anhadir.png" alt="avatar" id="img"/>
+            </div>
+          <div class="pie">
+              <input type="file" name="foto" id="foto" >
+              <label for="foto" id="agregar">AGREGAR PRENDA</label>
+              <input type="text" id="descripcion">
+              <label for="descripcion" >Descripcion</label><br>
+              <input type="submit" value="Agregar" class="agregar">
+          </div>
+        </form>
+    </div>
 
     <footer class="version">
         <h2>
             © Version Actual: 1.0
         </h2>
     </footer>
-    <script src="assets/scripts/scriptModal.js"></script>
     <script src="assets/scripts/script_armario.js"></script>
+    <script src="assets/scripts/scriptModal.js"></script>
+    
     
 </body>
 </html>

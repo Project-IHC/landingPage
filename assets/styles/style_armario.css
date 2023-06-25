@@ -366,11 +366,23 @@ div.pie{
     padding: 5px;
     font-size: 25px;
 }
-div.pie input{
+div.pie input#foto{
     display: none;
 }
 div.pie label:hover{
     cursor: pointer;
+}
+.agregar{
+    background-color: #f59f35;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 15px;
+}
+#prueba{
+    width: 100px;
+    height: 100px;
+    background-color: #FBBCB6;
+    position: absolute;
 }
 .version h2{
     background-color: #f59f35;

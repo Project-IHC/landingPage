@@ -334,11 +334,15 @@ li a:hover{
     display: auto;
     padding: 0px;
 }
-
+.recomendaciones{
+    display: flex;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
 .slider {
-
     min-width: 400px;
-    width: 41.15%;
+    width: 37.15%;
     height: auto;
     margin: auto;
     overflow: hidden;
@@ -353,7 +357,6 @@ li a:hover{
         list-style: none;
 }
 .slider img {
-    opacity: 100%;
     width: 100%;
     height: 100%;
 }

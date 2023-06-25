@@ -302,7 +302,10 @@ li a:hover{
     border-width: 0px;
     padding: 5px 30px;
 }
-
+#modal button:hover{
+    cursor:pointer;
+    color: white;
+}
 .volumen{
     width: 270px;
 }

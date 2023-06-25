@@ -12,7 +12,6 @@ body{
 }
 
 
-
 header input{
     display: none;
 }
@@ -306,6 +305,7 @@ li a:hover{
     cursor:pointer;
     color: white;
 }
+
 .volumen{
     width: 270px;
 }
@@ -325,118 +325,84 @@ li a:hover{
     margin: 0px 6%;
     text-align: left;
 }
+/*---Barra menu---- hasta aqui*/
 
-/**/
-.BannerRopa
-{
+.BannerPremium
+{   
     font-family:'Times New Roman';
     position: static;
     font-size: 50px;
     background-image:linear-gradient(to top,#FBBCB6,rgb(255, 230, 230),#FBBCB6);
     border: solid 1px rgb(255, 174, 174);
     padding:10px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
+
 .contenedor{
-    background-color: #F2C6C2;
-    font-family: 'Courier Prime', monospace;
-    height: 100%;
-    width:100%;
-    line-height: 80px;
-    display: flex;
+    position:static;
+    width: 100%;
+    height: auto;
+    min-height: 1200px;
+    margin: 20px 0px; 
 }
-.columna1
-{
-margin: 250px 250px;
-justify-content: center;
-align-items: center;    
+.button2{
+    margin: 40px 4%;
+    background: url("../images/boton.png") center;
+    background-size: 100% 100%;
+    color: black;
+    font-size: 4vh;
+    border-width: 0px;
+    padding: 20px 150px;
 }
-.columna2
-{
-padding: 100px;
-margin: 250px 50px;
-}
-.cb{
-    font-family: 'Courier Prime', monospace;
-    font-size: 21px;
-    text-align: center;
-    width: 500px;
-    height: 50px;
-    border:2px solid #aaa;
-    border-radius: 20px;
-    margin: 0.5px 0;
-    outline: none;
-    padding:8px;
-    box-sizing: border-box;
-    transition: .3s;
-}
-.cb:focus{
-    border-color: dodgerblue;
-    box-shadow: 0 0 8px 0 dodgerblue;
-}
-.fondo-save
-{
-    background-color: #F2C6C2;
-    margin: 0;
-    padding: 80px 10px;
-}
-#save
-{
-    font-family: 'Courier Prime', monospace;
-    font-size: 20px;
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: 500;
-    display:block;
-    width: 300px;
-    height: 60px;
-    transform:translateX(100px);
-    color:black;
-    background-color: #f59f35;
-    border:none;
-    border-radius: 30px;
-    outline: none;
-    transition: ease-out 0.3s;
-    box-shadow: inset 0 0 0 #FF3364;
-}
-#save:hover
-{
-    background-color: transparent;
-    border:2px solid #FBBCB6;
-    color:#FBBCB6;
+.button2:hover{
     cursor:pointer;
-    box-shadow: inset 300px 0 0 0 #FF3364;
+    color: white;
 }
-.version h2{
-    line-height: 75px;  
-    font-size: 20px;
-    background:#F2B263;
-    align-items: center;
+.contratos{
+font-size: 55px;
+text-align: center;
+}
+
+.beneficios{
+    padding:30px 0px;
+    background-color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center; 
+}
+.Tbeneficios{
+    padding-top:20px ;
+    display:flex;
+    font-size: 50px;
+    background-color: white;
     justify-content: center;
 }
-.photo{
-    align-items: center;
-    text-align: center;
+.box{ 
+    margin: 10px 40px;
+    padding: 10px;
+    border-radius: 10px;
+    position: static;
     width: 300px;
-    height: 70px;
-    font-size: 21px;
 }
-#prevista{
-    width: 300px;
-    height: 300px;
-    padding: 0;
+.box img{
+    height: 140px ;
+    width: auto;
+    border-radius: 15px;
 }
-.Foto{
-z-index:10;
-border-radius: 50%;
-object-fit: cover;
-border: 5px solid #fff;
-display: block;
+.box h6{
+    font-size: 30px;
 }
-#prevista{
-    width: 400px;
-    height: 400px;
+.box p{
+    font-size: 20px;
 }
+
+.version h2{
+    font-size: 25px;
+    background-color: #f59f35;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+

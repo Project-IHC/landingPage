@@ -378,12 +378,6 @@ div.pie label:hover{
     padding: 5px;
     font-size: 15px;
 }
-#prueba{
-    width: 100px;
-    height: 100px;
-    background-color: #FBBCB6;
-    position: absolute;
-}
 .version h2{
     background-color: #f59f35;
     width: 100%;
@@ -488,10 +482,9 @@ text-align: center;
     text-align: center;
 
 }
-* {
-  box-sizing: border-box;
+.comprar{
+    box-sizing: border-box;
 }
-
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;

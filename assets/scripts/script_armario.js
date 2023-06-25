@@ -1,4 +1,4 @@
-const defaultFile = 'imagenes/anhadir.png';
+const defaultFile = 'assets/images/anhadir.png';
 const file = document.getElementById( 'foto');
 const img = document.getElementById ( 'img' );
 file.addEventListener( 'change', e => {
@@ -38,6 +38,9 @@ class UI{
         
         lista.appendChild(element);
     }
+    resertForm(){
+        document.getElementById('formulario').reset();
+    }
     deleteRopa(){
 
     }
@@ -48,6 +51,8 @@ document.getElementById('formulario').addEventListener('submit',function(e){
     const ropa=new Ropa(foto,descripcion);
     const ui=new UI();
     ui.addRopa(ropa);
+    img.src = defaultFile;
+    ui.resertForm();
     
     e.preventDefault();
 })

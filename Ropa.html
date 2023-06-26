@@ -10,6 +10,7 @@
      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
      crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet" href="assets/styles/style_Ropa.css">
+     <script src="assets/scripts/query.js"></script>
 </head>
 <body>
     <nav>   
@@ -105,7 +106,7 @@
             </div>
         </div>
 
-        <div class="filtros">
+        <form class="filtros" id="filtros">
             <div>
                 <label for="Tprenda">Tipo de Prenda:</label>
                 <select id="Tprenda">
@@ -114,7 +115,7 @@
                     <option>Camisas</option>
                     <option>Blusas</option>
                     <option>Busos</option>
-                    <option>Medias</option>
+                    <option>Vestidos</option>
                     <option>Zapatillas</option>
                     <option>Botas</option>
                 </select>
@@ -140,13 +141,22 @@
             </div>
             <div>
                 <label for="precio">Precio:</label>
-                <select id="precio">
-                    <option>---</option>
-                    <option>Menor a S/100.00</option>
-                    <option>S/100.00 a S/200.00</option>
-                    <option>S/200.00 a S/300.00</option>
-                    <option>S/300.00 a S/400.00</option>
-                    <option>Más de S/400.00</option>
+                <select id="precio1">
+                    <option>desde</option>
+                    <option >0</option>
+                    <option >100</option>
+                    <option >200</option>
+                    <option >300</option>
+                    <option >500</option>
+                </select>
+                
+                <select id="precio2">
+                    <option>hasta</option>
+                    <option >100</option>
+                    <option >200</option>
+                    <option >300</option>
+                    <option >400</option>
+                    <option >500</option>
                 </select>
             </div>
             <div>
@@ -172,9 +182,9 @@
                 </select>
             </div >
             <div class="button">
-                <button class="buscar">Buscar</button>
+                <button class="buscar" type="input">Buscar</button>
             </div>
-        </div>
+        </form>
         <div class="marca">
             <h2>Marcas disponibles</h2>
             <div class="carrusel">
@@ -207,7 +217,7 @@
             </div>
         </div>
         <div class="catalogo">
-            <div class="presentacion">
+            <div class="presentacion" category="Vestidos" precio=500>
                 <div class="Pimagen"></div>
                 <div class="descripcion"> Vestido Rojo</div>
                 <div class="caracteristicas">Talla: S    Color: Rojo</div>
@@ -227,7 +237,7 @@
                     </div>
                 </dialog>
             </div>
-            <div class="presentacion">
+            <div class="presentacion" category="Blusas" precio="100">
                 <div class="Pimagen1"></div>
                 <div class="descripcion"> Blusa rayada</div>
                 <div class="caracteristicas">Talla: S    Color: Azul</div>
@@ -247,7 +257,7 @@
                     </div>
                 </dialog>
             </div>
-            <div class="presentacion">
+            <div class="presentacion" category="Zapatillas" precio="250">
                 <div class="Pimagen2"></div>
                 <div class="descripcion"> Zapatillas</div>
                 <div class="caracteristicas">Talla: 40    Color: Negro</div>
@@ -267,7 +277,7 @@
                     </div>
                 </dialog>
             </div>
-            <div class="presentacion">
+            <div class="presentacion" category="Busos" precio="150">
                 <div class="Pimagen3"></div>
                 <div class="descripcion"> Buzo</div>
                 <div class="caracteristicas">Talla: S    Color: Verde</div>
@@ -302,10 +312,12 @@
             © Version Actual: 1.0
         </h2>
     </footer>
+
     <script src="assets/scripts/script_comprar.js"></script>
     <script src="assets/scripts/script_map.js"></script>
     <script src="assets/scripts/script_carrusel.js"></script>
     <script src="assets/scripts/scriptModal.js"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQysw0BxkpbICTiFjVNd4c814uVoS8pgE&libraries=places&callback=initMap"></script> </script>
+    <script src="assets/scripts/script_filtro.js"></script>
 </body>
 </html>

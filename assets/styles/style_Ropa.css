@@ -342,11 +342,11 @@ li a:hover{
 }
 
 .contenedor{
-    position:static;
+    display: auto;
+    position: static;
     width: 95%;
     height: auto;
     margin: auto;
-    display: auto;
     padding: 0px;
 }
 
@@ -464,24 +464,28 @@ h2{
 /*----catalogo----*/
 
 .catalogo{
-
- display:flex;
- justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(280px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    padding-top: 2rem;
 }
 .presentacion{
-    position: static;
     background-color: #f59f35;
     margin: 50px 30px;
     width: 20%;
     min-width: 300px;
     height: 500px;
+    border-radius: 10px;
+    position: static;
 }
 .presentacion:hover{
     background-color: #da8c2e;
     transition-duration:  0.5s;
 }
 .Pimagen{
-    position: relative;
+    position: static;
     width: 100%;
     height: 520px;
     height: 60%;
@@ -506,24 +510,25 @@ h2{
 
 .comprar{
     background-color: #f59f35;
+    
 }
 
 .Pimagen1{
-    position: relative;
+    position: static;
     width: 100%;
     height: 520px;
     height: 60%;
     background: url('../images/ropaV2.jpg') center / cover;
 }
 .Pimagen2{
-    position: relative;
+    position: static;
     width: 100%;
     height: 520px;
     height: 60%;
     background: url('../images/ropaV3.jpg') center / cover;
 }
 .Pimagen3{
-    position: relative;
+    position: static;
     width: 100%;
     height: 520px;
     height: 60%;

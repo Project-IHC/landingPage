@@ -341,35 +341,51 @@ li a:hover{
 }
 
 .contenedor{
-    position:unset;
+    position:static;
     width: 100%;
     height: auto;
     margin: 20px 0px; 
 }
-div.galeria{
+.galeriaa{
     padding: 10px 10px;
-    margin: 5px 20px;
+    margin: 15px 20px;
     box-shadow: 0 4px 8px 0 #f59f35, 0 6px 20px 0 rgba(0,0,0,0.19);
     float: left;
     width: 300px;
 }
-div.galeria img{
+.galeriaa img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
 }
-div.galeria:hover{
+
+.galeria{
+    padding: 10px 10px;
+    margin: 15px 20px;
+    box-shadow: 0 4px 8px 0 #f59f35, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 300px;
+}
+.galeria img{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+.galeria:hover{
     box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-div.pie{
+.pie{
     text-align: center;
     text-shadow: 0px 0px 3px black;
     padding: 5px;
     font-size: 25px;
 }
-div.pie input#foto{
+.pie input#foto{
     display: none;
 }
-div.pie label:hover{
+.pie label:hover{
     cursor: pointer;
 }
 .agregar{
@@ -522,9 +538,9 @@ text-align: center;
 }
 
 input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 12px ;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -578,4 +594,3 @@ span.price {
     margin-bottom: 20px;
   }
 }
-

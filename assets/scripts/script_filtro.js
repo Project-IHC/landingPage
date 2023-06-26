@@ -5,10 +5,9 @@ document.getElementById('filtros').addEventListener('submit',function(e){
     const tipo=document.getElementById('Tprenda').value;
     const precio1=document.getElementById('precio1').value;
     const precio2=document.getElementById('precio2').value;
-    if(precio1=='desde') precio1='0';
-    if(precio1=='hasta') precio1='10000';
 
-    if(tipo==='---'){
+
+    if(tipo==='todas'){
         $('.presentacion').show();
     } else{
         $('.presentacion').hide();
